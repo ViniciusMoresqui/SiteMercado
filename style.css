@@ -89,3 +89,126 @@ main {
 main h1 {
     text-align: center;
     margin-bottom: 30px;
+}
+
+/* Produtos */
+.produtos {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 20px;
+}
+
+.produto {
+    background: white;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.produto img {
+    width: 100%;
+    height: 200px;
+    object-fit: contain;
+    margin-bottom: 10px;
+}
+
+.produto h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.produto p {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.produto button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.produto button:hover {
+    background-color: #0056b3;
+}
+
+/* Carrinho */
+.carrinho {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+.item-carrinho {
+    background: white;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.item-carrinho img {
+    width: 100%;
+    height: 150px;
+    object-fit: contain;
+    margin-bottom: 10px;
+}
+
+.item-carrinho h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.item-carrinho p {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.item-carrinho button {
+    padding: 8px 16px;
+    background-color: #dc3545;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.item-carrinho button:hover {
+    background-color: #c82333;
+}
+
+/* Total */
+.total {
+    text-align: center;
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+/* Botão Finalizar */
+.finalizar-btn {
+    display: block;
+    margin: 0 auto;
+    padding: 12px 30px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+.finalizar-btn:hover {
+    background-color: #218838;
+}
